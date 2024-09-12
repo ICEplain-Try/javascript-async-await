@@ -13,3 +13,10 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+getJohnProfile()
+  .then((profile) => {
+    console.log(profile); // จะไม่ถูกเรียกใช้ในกรณีนี้
+  })
+  .catch((error) => {
+    console.log(error);
+  });

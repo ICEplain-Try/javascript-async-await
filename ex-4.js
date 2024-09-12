@@ -13,3 +13,14 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+
+async function getJohnProfileAsync() {
+  try {
+    const profile = await getJohnProfile();
+    console.log(profile);
+  } catch (error) {
+    console.error("เกิดข้อผิดพลาด:", error);
+  }
+}
+
+getJohnProfileAsync();
